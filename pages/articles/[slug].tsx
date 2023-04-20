@@ -10,28 +10,31 @@ import type { Article } from '../../types/article'
 export default function Article({ article }: { article: Article }) {
   return (
     <>
-    <div className='wrapper'>
-      <header className='blog-header'>
-          <HeaderInner />
-          <div className="main-read">
-            <h1>Tech Blog</h1>
-          </div>
-      </header>
-      <main>
-        <section>
-          <div className="container">
-            <div className='blog-detail'>
-            <h1>{article.title}</h1>
-            <div className="date"><i className="material-icons">schedule</i>
-                    { new Intl.DateTimeFormat('en-US', { dateStyle: 'medium' }).format(new Date(article.date))}</div>
-            <div className="blog-detail-area" dangerouslySetInnerHTML={{ __html: article.body }} />
+      <Head>
+        <title>{article.title} | NEXT BASE</title>
+      </Head>
+      <div className='wrapper'>
+        <header className='blog-header'>
+            <HeaderInner />
+            <div className="main-read">
+              <h1>Tech Blog</h1>
             </div>
-          </div>
-        </section>
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+        </header>
+        <main>
+          <section>
+            <div className="container">
+              <div className='blog-detail'>
+              <h1>{article.title}</h1>
+              <div className="date"><i className="material-icons">schedule</i>
+                      { new Intl.DateTimeFormat('en-US', { dateStyle: 'medium' }).format(new Date(article.date))}</div>
+              <div className="blog-detail-area" dangerouslySetInnerHTML={{ __html: article.body }} />
+              </div>
+            </div>
+          </section>
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </>
   )
 }
