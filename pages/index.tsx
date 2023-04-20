@@ -120,6 +120,8 @@ export default function Home({ articles }: { articles: Article[] }) {
                         <img
                           src={article.coverImage.src}
                           alt={article.title}
+                          width="417"
+                          height="200"
                         />
                         <h3>Next</h3>
                       </div>
