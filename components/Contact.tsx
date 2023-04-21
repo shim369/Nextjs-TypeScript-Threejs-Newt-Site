@@ -26,7 +26,7 @@ function Contact() {
   
             <p className='contact-read'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <div className="contact-logo">
-            GATSBY BASE
+            NEXT BASE
             </div>
           </div>
         </section>
