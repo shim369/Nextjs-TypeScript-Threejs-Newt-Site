@@ -9,7 +9,7 @@ export default function Article({ article }: { article: Article }) {
   return (
     <>
       <Head>
-        <title>{article.title} | NEXT BASE</title>
+        <title>{article.title + " | NEXT BASE"}</title>
       </Head>
       <div className='wrapper'>
         <header className='blog-header'>
