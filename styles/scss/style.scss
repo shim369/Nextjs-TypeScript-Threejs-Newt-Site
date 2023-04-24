@@ -70,6 +70,17 @@ section {
             color: rgba(0, 0, 0, .4);
             text-align: left;
             writing-mode: unset;
+            @media (max-width: 480px) {
+                text-align: center;
+            }
+        }
+    }
+    &:nth-child(2) {
+        h1 {
+            @media (max-width: 480px) {
+                text-align: center;
+                writing-mode: unset;
+            }
         }
     }
     &:nth-child(3) {
@@ -78,6 +89,9 @@ section {
             color: rgba(0, 0, 0, .4);
             text-align: right;
             writing-mode: unset;
+            @media (max-width: 480px) {
+                text-align: center;
+            }
         }
     }
     &:last-child {
@@ -328,6 +342,9 @@ main {
 
 .skills {
     display: flex;
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
 }
 
 .skills-detail {
