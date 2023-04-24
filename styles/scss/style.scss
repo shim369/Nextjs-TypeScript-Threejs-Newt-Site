@@ -57,9 +57,6 @@ section {
         @media (max-width: 1200px) {
             font-size: 6em;
         }
-        @media (max-width: 800px) {
-            font-size: 5em;
-        }
         @media (max-width: 480px) {
             font-size: 4em;
         }
@@ -70,14 +67,14 @@ section {
             color: rgba(0, 0, 0, .4);
             text-align: left;
             writing-mode: unset;
-            @media (max-width: 480px) {
+            @media (max-width: 800px) {
                 text-align: center;
             }
         }
     }
     &:nth-child(2) {
         h1 {
-            @media (max-width: 480px) {
+            @media (max-width: 800px) {
                 text-align: center;
                 writing-mode: unset;
             }
@@ -89,7 +86,7 @@ section {
             color: rgba(0, 0, 0, .4);
             text-align: right;
             writing-mode: unset;
-            @media (max-width: 480px) {
+            @media (max-width: 800px) {
                 text-align: center;
             }
         }
@@ -114,7 +111,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    @media (max-width: 480px) {
+    @media (max-width: 800px) {
         padding: 16px;
     }
 }
@@ -253,96 +250,41 @@ main {
     justify-content: space-around;
     flex-direction: row-reverse;
     align-items: center;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         flex-direction: column;
     }
-}
-
-.flex-image {
-    width: 48%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    @media (max-width: 600px) {
-        width: 100%;
-    }
-    img {
-        width: 110px;
-        height: 380px;
-        object-fit: cover;
-        position: relative;
-        margin: 0 15px;
-        @media (max-width: 1200px) {
-            width: 90px;
-            height: 350px;
-        }
-        @media (max-width: 1000px) {
-            width: 70px;
-            height: 300px;
-        }
+    .flex-image {
+        width: 48%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
         @media (max-width: 800px) {
-            width: 60px;
-            height: 250px;
+            width: 100%;
         }
-        @media (max-width: 480px) {
-            width: 50px;
-            height: 200px;
+        img {
+            width: 80%;
+            height: auto;
+            aspect-ratio: 47/32;
         }
-        &:nth-child(1) {
-            top: calc(0px - 160px);
-            @media (max-width: 1200px) {
-                top: calc(0px - 100px);
-            }
-            @media (max-width: 900px) {
-                top: calc(-20px + 20px);
-            }
+    }
+    .flex-text {
+        width: 48%;
+        color: #fff;
+        @media (max-width: 800px) {
+            margin-top: 30px;
+            width: 100%;
         }
-        &:nth-child(2) {
-            top: calc(40px - 160px);
-            @media (max-width: 1200px) {
-                top: calc(40px - 100px);
-            }
-            @media (max-width: 900px) {
-                top: calc(0px + 20px);
-            }
-        }
-        &:nth-child(3) {
-            top: calc(80px - 160px);
-            @media (max-width: 1200px) {
-                top: calc(80px - 100px);
-            }
-            @media (max-width: 900px) {
-                top: calc(20px + 20px);
-            }
-        }
-        &:nth-child(4) {
-            top: calc(120px - 160px);
-            @media (max-width: 1200px) {
-                top: calc(120px - 100px);
-            }
-            @media (max-width: 900px) {
-                top: calc(40px + 20px);
-            }
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
         }
     }
 }
 
-.flex-text {
-    width: 48%;
-    color: #fff;
-    @media (max-width: 600px) {
-        margin-top: 100px;
-        width: 100%;
-    }
-    p {
-        margin-bottom: 20px;
-        line-height: 1.5;
-    }
-}
 
 .skills {
     display: flex;
-    @media (max-width: 480px) {
+    @media (max-width: 800px) {
         flex-direction: column;
     }
 }
@@ -356,15 +298,14 @@ main {
     li {
         display: flex;
         justify-content: space-around;
+        align-items: flex-start;
         margin-bottom: 40px;
         width: 46%;
         background: rgba(0,0,0,.5882352941);
         padding: 10px;
-        align-items: center;
         @media (max-width: 800px) {
             width: 100%;
             margin-bottom: 20px;
-            align-items: flex-start;
         }
         .skills-img {
             width: 100px;
@@ -401,6 +342,7 @@ main {
     .blog-area {
         display: flex;
         justify-content: flex-start;
+        flex-wrap: wrap;
         margin-top: 40px;
         @media (max-width: 480px) {
             flex-direction: column;

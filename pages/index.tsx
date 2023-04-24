@@ -33,10 +33,7 @@ export default function Home({ articles }: { articles: Article[] }) {
             <h1>About</h1>
             <div className="flex-box">
               <div className="flex-image">
-                <Image src="/images/about1.jpg" alt="about1" width={30} height={200} />
-                <Image src="/images/about2.jpg" alt="about2" width={30} height={200} />
-                <Image src="/images/about3.jpg" alt="about3" width={30} height={200} />
-                <Image src="/images/about4.jpg" alt="about4" width={30} height={200} />
+                <Image src="/images/keybord.png" alt="about" width={470} height={320} />
               </div>
               <div className="flex-text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur laborum autem ea! Facere repellat, quas reiciendis dolores beatae ipsam libero amet vel in pariatur? Ipsa dolores dolore dolorum quas.</p>
@@ -56,7 +53,7 @@ export default function Home({ articles }: { articles: Article[] }) {
                 </div>
                 <div className="skills-text">
                   <h2>Astro</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos facere voluptates libero!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
               </li>
               <li>
@@ -65,7 +62,7 @@ export default function Home({ articles }: { articles: Article[] }) {
                 </div>
                 <div className="skills-text">
                   <h2>JavaScript</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos facere voluptates libero!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
               </li>
               <li>
@@ -74,7 +71,7 @@ export default function Home({ articles }: { articles: Article[] }) {
                 </div>
                 <div className="skills-text">
                   <h2>Next.js</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos facere voluptates libero!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
               </li>
               <li>
@@ -83,7 +80,7 @@ export default function Home({ articles }: { articles: Article[] }) {
                 </div>
                 <div className="skills-text">
                   <h2>Nuxt.js</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos facere voluptates libero!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
               </li>
               <li>
@@ -92,7 +89,7 @@ export default function Home({ articles }: { articles: Article[] }) {
                 </div>
                 <div className="skills-text">
                   <h2>Python</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos facere voluptates libero!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
               </li>
               <li>
@@ -101,7 +98,7 @@ export default function Home({ articles }: { articles: Article[] }) {
                 </div>
                 <div className="skills-text">
                   <h2>Figma</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos facere voluptates libero!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
               </li>
             </ul>
