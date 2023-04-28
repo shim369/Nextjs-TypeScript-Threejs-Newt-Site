@@ -3,6 +3,7 @@ function Contact() {
         <section className="contact" id="a04">
           <div className="container">
             <h1>Contact</h1>
+            <div data-aos="fade-up">
             <p className='contact-read'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Veritatis voluptates ut eius aliquam dolorum consequuntur nemo quas.</p>
               
             <div className="contact-container">
@@ -16,6 +17,7 @@ function Contact() {
                     </div>
                 </form>
               </div>
+            </div>
             </div>
   
             <div className="bnr-box" data-aos="fade-up">

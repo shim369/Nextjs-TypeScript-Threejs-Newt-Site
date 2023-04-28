@@ -50,7 +50,7 @@ export default function Home({ articles }: { articles: Article[] }) {
               <div className="flex-image" data-aos="fade-up">
                 <Image src="/images/keybord.png" alt="about" width={470} height={320} />
               </div>
-              <div className="flex-text">
+              <div className="flex-text" data-aos="fade-right">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur laborum autem ea! Facere repellat, quas reiciendis dolores beatae ipsam libero amet vel in pariatur? Ipsa dolores dolore dolorum quas.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur laborum autem ea! Facere repellat, quas reiciendis dolores beatae ipsam libero amet vel in pariatur? Ipsa dolores dolore dolorum quas.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur laborum autem ea! Facere repellat, quas reiciendis dolores beatae ipsam libero amet vel in pariatur? Ipsa dolores dolore dolorum quas.</p>
