@@ -18,8 +18,7 @@ function Contact() {
               </div>
             </div>
   
-            <div className="bnr-box">
-                {/* <a href="https://nextbase-iota.vercel.app/" target="_blank">Next Base</a> */}
+            <div className="bnr-box" data-aos="fade-up">
                 <a href="https://nuxtbase.vercel.app/" target="_blank">Nuxt Base</a>
                 <a href="https://astrobase.vercel.app/" target="_blank">Astro Base</a>
             </div>
