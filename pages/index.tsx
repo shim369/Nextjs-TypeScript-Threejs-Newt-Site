@@ -89,8 +89,8 @@ export default function Home({ articles }: { articles: Article[] }) {
                     .filter((article) => article.category.name === "Next")
                     .slice(0, 3)
                     .map((article) => (
-                      <Link href={`articles/${article.slug}`}>
                       <div className="blog-card" key={article._id}>
+                      <Link href={`articles/${article.slug}`}>
                       <div className="img-category">
                         <img
                           src={article.coverImage.src}
@@ -103,8 +103,8 @@ export default function Home({ articles }: { articles: Article[] }) {
                       <div className="date"><i className="material-icons">schedule</i>
                       { new Intl.DateTimeFormat('en-US', { dateStyle: 'medium' }).format(new Date(article.date))}</div>
                       <h2>{article.title}</h2>
-                      </div>
                       </Link>
+                      </div>
                   ))}
             </div>
           </div>
