@@ -32,6 +32,7 @@ export default function Home({ articles }: { articles: Article[] }) {
     <>
       <Head>
         <title>NEXT BASE</title>
+        <meta name="description" content="Next.js + TypeScript + Three.js + Newt" />
       </Head>
       <ThreeScene />
       <div className='wrapper'>
@@ -88,6 +89,7 @@ export default function Home({ articles }: { articles: Article[] }) {
                     .filter((article) => article.category.name === "Next")
                     .slice(0, 3)
                     .map((article) => (
+                      <Link href={`articles/${article.slug}`}>
                       <div className="blog-card" key={article._id}>
                       <div className="img-category">
                         <img
@@ -96,13 +98,13 @@ export default function Home({ articles }: { articles: Article[] }) {
                           width="417"
                           height="200"
                         />
-                        <h3>Next</h3>
+                        <p>Next</p>
                       </div>
                       <div className="date"><i className="material-icons">schedule</i>
                       { new Intl.DateTimeFormat('en-US', { dateStyle: 'medium' }).format(new Date(article.date))}</div>
                       <h2>{article.title}</h2>
-                      <Link href={`articles/${article.slug}`} className="btn-s">Read more</Link>
                       </div>
+                      </Link>
                   ))}
             </div>
           </div>
