@@ -10,8 +10,8 @@ function Contact() {
               <div className="contact-inner">
                 <form className="form-box" action="https://shim.form.newt.so/v1/vUf_6rML6" method="post">
                     <div className="form-item">
-                        <input id="name" name="name" placeholder="Name" />
-                        <input id="email" name="email" type="email" placeholder="Email" />
+                        <input id="name" name="name" placeholder="Name" autoComplete="name" />
+                        <input id="email" name="email" type="email" placeholder="Email" autoComplete="email" />
                         <textarea id="message" name="message" placeholder="Message"></textarea>
                         <button type="submit">Submit</button>
                     </div>
