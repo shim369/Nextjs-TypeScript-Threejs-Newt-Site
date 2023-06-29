@@ -98,7 +98,7 @@ export default function Home({ articles }: { articles: Article[] }) {
                           width="417"
                           height="200"
                         />
-                        <p>Next</p>
+                        <p>Next.js</p>
                       </div>
                       <div className="date"><i className="material-icons">schedule</i>
                       { new Intl.DateTimeFormat('en-US', { dateStyle: 'medium' }).format(new Date(article.date))}</div>
