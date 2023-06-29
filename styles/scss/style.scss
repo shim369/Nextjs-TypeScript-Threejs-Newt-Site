@@ -390,6 +390,11 @@ main {
                 font-size: 1.2em;
                 color: #f4f4ec;
             }
+            a {
+                &:hover {
+                    opacity: .8;
+                }
+            }
         }
     }
     .btn-s {
